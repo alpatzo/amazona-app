@@ -1,0 +1,8 @@
+{% block title %}{{ annonces.nom}}{% endblock %}
+{% block body %}
+<h3>{{ annonces.nom }}</h3>
+<p> {{ annonces.description}} </p>
+<img src="{{('template/img/')}}{{annonces.image}}" alt="" width="300" height="300">
+<br>
+<a href="{{ path('home')}}">Retour</a>
+{% endblock %}

@@ -1,0 +1,9 @@
+{% block body %}
+    <form action="{{ path('security_login') }}" method="post">
+        <input placeholder="Adress email ..." required name="_username" type="text">
+        <br>
+        <input placeholder="Mot de passe ..." required name="_password" type="password">
+        <br>
+        <button type="submit">connexion</button>
+    </form>
+{% endblock %}
